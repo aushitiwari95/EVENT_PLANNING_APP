@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
     await axios
       .post(
-        "http://localhost:2000/api/v1/message/send",
+        "https://backend-new-flame.vercel.app/api/v1/message/send",
         {
           name,
           email,
