@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
     await axios
       .post(
-        "https://backend-new-flame.vercel.app/api/v1/message/send",
+        "https://event-planning-app-2-y1s2.onrender.com//api/v1/message/send",
         {
           name,
           email,
@@ -20,7 +20,6 @@ const Contact = () => {
           message,
         },
         {
-          withCredentials: true,
           headers: { "Content-Type": "application/json" },
         }
       )
